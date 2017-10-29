@@ -1,0 +1,18 @@
+PODS:
+  - Alamofire (4.5.1)
+  - LFLiveKit (2.6)
+  - SnapKit (4.0.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.5)
+  - LFLiveKit (~> 2.6)
+  - SnapKit (~> 4.0.0)
+
+SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  LFLiveKit: 2219563721f8aa0f188effc3395a06e2d53b23f2
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+
+PODFILE CHECKSUM: 55e608ad3e308ad41a177dc326e850b0b3ad3641
+
+COCOAPODS: 1.2.0.beta.1
