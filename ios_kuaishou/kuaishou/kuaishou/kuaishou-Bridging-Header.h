@@ -6,3 +6,4 @@
 
 #import <LFLiveKit/LFLiveKit.h>
 
+#import <CommonCrypto/CommonCrypto.h>
