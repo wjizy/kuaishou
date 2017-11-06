@@ -2,17 +2,22 @@ PODS:
   - Alamofire (4.5.1)
   - LFLiveKit (2.6)
   - SnapKit (4.0.0)
+  - SQLite.swift (0.11.4):
+    - SQLite.swift/standard (= 0.11.4)
+  - SQLite.swift/standard (0.11.4)
 
 DEPENDENCIES:
   - Alamofire (~> 4.5)
   - LFLiveKit (~> 2.6)
   - SnapKit (~> 4.0.0)
+  - SQLite.swift (~> 0.11.4)
 
 SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
   LFLiveKit: 2219563721f8aa0f188effc3395a06e2d53b23f2
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  SQLite.swift: 3e3bee21da701b5b9f87c4a672cb54f233505692
 
-PODFILE CHECKSUM: 55e608ad3e308ad41a177dc326e850b0b3ad3641
+PODFILE CHECKSUM: 4b6cecae2c50e981103bdcc64eb44158c88a19aa
 
 COCOAPODS: 1.2.0.beta.1

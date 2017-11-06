@@ -7,8 +7,8 @@
 //
 
 import UIKit
-import AppBasicKit
 
-class ApiHome: NSObject {
+class ApiHome: BaseApi {
 
+    
 }
