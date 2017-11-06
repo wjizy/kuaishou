@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let homeVC = HomeViewController()
         let nav = UIBasicNavigationController.init(rootViewController: homeVC)
         self.window?.rootViewController = nav
-        
+    
         self.window?.makeKeyAndVisible()
         return true
     }

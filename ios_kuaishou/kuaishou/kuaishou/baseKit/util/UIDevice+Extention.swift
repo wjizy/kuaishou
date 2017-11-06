@@ -9,8 +9,13 @@
 import Foundation
 
 extension UIDevice{
-    
-    
+    /// 获取UUID
+   class func getUUIDString() -> String {
+        let uuidRef = CFUUIDCreate(kCFAllocatorDefault)
+        let stringRef = CFUUIDCreateString(kCFAllocatorDefault, uuidRef)
+        let uuidString = (stringRef! as String).replacingOccurrences(of: "-", with: "")
+        return uuidString
+    }
     
     
     
