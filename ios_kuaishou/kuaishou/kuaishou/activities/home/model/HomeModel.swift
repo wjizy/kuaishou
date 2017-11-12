@@ -8,11 +8,15 @@
 
 import UIKit
 
-class HomeModel: BaseModel {
+class HomeModel: NSObject, Codable {
 
-    var userName:String?
-    var userID:String?
+    var code:Int?
+    var data:HomeData?
     
+}
+
+class HomeData: NSObject, Codable {
     
+    var a:Int?
     
 }

@@ -10,5 +10,11 @@ import UIKit
 
 class ApiHome: BaseApi {
 
+   class func GET<T:Decodable>(url:String, pamaram:Dictionary<String, Any>, success:@escaping Success, fail:@escaping Failture, modelClass:T.Type) -> Void{
+    self.baseGet(url: url, pamaram: pamaram, success: success, fail: fail, modelClass: modelClass)
+    }
     
+    class func POST<T:Decodable>(url:String, pamaram:Dictionary<String, Any>, success:@escaping Success, fail:@escaping Failture, modelClass:T.Type) -> Void{
+        self.basePost(url: url, pamaram: pamaram, success: success, fail: fail, modelClass: modelClass)
+    }
 }

@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+public let kAppName = "kuaishou"
 /// 当前版本号
 public let kCurrentVersion = Bundle.main.infoDictionary!["CFBundleShortVersionString"] as! String
 /// 当前小版本号
@@ -44,10 +45,10 @@ public let kCutLineWidth:CGFloat = 1.0 / kAppScale
 ///   - funcName: 方法名
 ///   - lineNum: 行数
 public func DLog<T>(_ messsage: T, file: String = #file, funcName: String = #function, lineNum: Int = #line) {
-//    #if DEBUG
+    #if DEBUG
         let fileName = (file as NSString).lastPathComponent
-        print("\(fileName):(\(lineNum))======>>>>>>\n\(messsage)")
-//    #endif
+        print("\(fileName):(\(lineNum))=======\n\(messsage)\n=========================")
+    #endif
 }
 
 

@@ -34,6 +34,33 @@ class HomeViewController: UIBasicController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        ApiHome.GET(url: "", pamaram: ["action":"get","id":"a","signature":"4fd904d924e15b30dfce49674124c139"], success: { (result) in
+            let model = result as? HomeModel
+            
+            print("\(model?.code ?? -1) === \(model?.data?.a ?? -1)")
+        }, fail: { (error) in
+            
+        }, modelClass: HomeModel.self)
+        
+        
+        
+        let uuid = UIDevice.getUUIDString()
+        let date = Int(Date.timeIntervalBetween1970AndReferenceDate)
+        let ID = uuid + String(date)
+        let signature = kAppName + uuid
+        
+        
+        let md5ID = ID.md5String()
+        let md5Signature = signature.md5String()
+        
+        ApiHome.POST(url: "", pamaram: ["action":"set","id":md5ID,"signature":md5Signature], success: { (result) in
+            let model = result as! LiveModel
+            
+            print("ok = \(model.code ?? -1) + \(model.data ?? -1)")
+        }, fail: { (error) in
+            print("error=====\(error)")
+        }, modelClass: LiveModel.self)
+        
         
         self.watchLiveButton.addTarget(self, action: #selector(watchLiveButtonClick), for: .touchUpInside)
         self.liveButton.addTarget(self, action: #selector(liveButtonClick), for: .touchUpInside)
