@@ -48,8 +48,6 @@ class HomeViewController: UIBasicController {
         let date = Int(Date.timeIntervalBetween1970AndReferenceDate)
         let ID = uuid + String(date)
         let signature = kAppName + uuid
-        
-        
         let md5ID = ID.md5String()
         let md5Signature = signature.md5String()
         

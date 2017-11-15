@@ -19,7 +19,7 @@ extension String{
         let buffer = UnsafeMutablePointer<UInt8>.allocate(capacity: kBufferLength)
         CC_MD5(cStr!,(CC_LONG)(strlen(cStr!)), buffer)
         let md5String = NSMutableString()
-        for i in 0 ..< 16{
+        for i in 0 ..< 16 {
             md5String.appendFormat("%02x", buffer[i])
         }
         free(buffer)

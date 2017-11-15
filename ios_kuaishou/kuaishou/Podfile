@@ -5,5 +5,5 @@ use_frameworks!
 target 'kuaishou' do
     pod 'SnapKit', '~> 4.0.0'
     pod 'LFLiveKit', '~> 2.6'
-    pod 'SQLite.swift', '~> 0.11.4'
+    pod 'FMDB'
 end
