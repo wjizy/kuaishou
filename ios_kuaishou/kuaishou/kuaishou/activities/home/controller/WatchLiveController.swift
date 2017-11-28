@@ -20,8 +20,10 @@ class WatchLiveController: UIBasicController {
     
     func playMedia() {
         self.view.backgroundColor = UIColor.white
-        
-        let player = IJKFFMoviePlayerController.init(contentURLString: "rtmp://101.132.175.177:1935/myapp/test", with: nil)
+//        rtmp://101.132.175.177:1935/myapp/test
+//        http://116.211.167.106/api/live/aggregation?uid=133825214&interest=1
+//        http://qqpull.inke.cn/live/1510754958465637.flv?ikHost=tx&ikOp=0&codecInfo=8192
+        let player = IJKFFMoviePlayerController.init(contentURLString: "rtmp://101.132.175.177:1935/myapp/test", with: IJKFFOptions.byDefault())
         player?.prepareToPlay()
         
         player?.view.frame = kScreen

@@ -10,6 +10,9 @@
 		6534DC011FB6F6670003AC9E /* LiveModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6534DC001FB6F6670003AC9E /* LiveModel.swift */; };
 		6534DC031FB7F3F30003AC9E /* UICycleBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6534DC021FB7F3F30003AC9E /* UICycleBanner.swift */; };
 		6534DC071FB9CE6A0003AC9E /* AppDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6534DC061FB9CE6A0003AC9E /* AppDB.swift */; };
+		6534DC0A1FBC6EC00003AC9E /* AppSqlite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6534DC091FBC6EC00003AC9E /* AppSqlite.swift */; };
+		6534DC0C1FBC6F380003AC9E /* AppCoreDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6534DC0B1FBC6F380003AC9E /* AppCoreDB.swift */; };
+		6534DC0E1FBC6F460003AC9E /* AppCacheDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6534DC0D1FBC6F460003AC9E /* AppCacheDB.swift */; };
 		65624EC31FA9FF7400CF73B5 /* BaseApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65624EC21FA9FF7400CF73B5 /* BaseApi.swift */; };
 		65624EC71FAD867100CF73B5 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65624EC61FAD867100CF73B5 /* HomeModel.swift */; };
 		65714A091FA20546005E37FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65714A081FA20546005E37FC /* AppDelegate.swift */; };
@@ -50,6 +53,9 @@
 		6534DC001FB6F6670003AC9E /* LiveModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveModel.swift; sourceTree = "<group>"; };
 		6534DC021FB7F3F30003AC9E /* UICycleBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICycleBanner.swift; sourceTree = "<group>"; };
 		6534DC061FB9CE6A0003AC9E /* AppDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDB.swift; sourceTree = "<group>"; };
+		6534DC091FBC6EC00003AC9E /* AppSqlite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSqlite.swift; sourceTree = "<group>"; };
+		6534DC0B1FBC6F380003AC9E /* AppCoreDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoreDB.swift; sourceTree = "<group>"; };
+		6534DC0D1FBC6F460003AC9E /* AppCacheDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCacheDB.swift; sourceTree = "<group>"; };
 		65624EC21FA9FF7400CF73B5 /* BaseApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseApi.swift; sourceTree = "<group>"; };
 		65624EC61FAD867100CF73B5 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		65714A051FA20546005E37FC /* kuaishou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kuaishou.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -134,7 +140,10 @@
 		6534DC081FB9CE6F0003AC9E /* db */ = {
 			isa = PBXGroup;
 			children = (
+				6534DC091FBC6EC00003AC9E /* AppSqlite.swift */,
 				6534DC061FB9CE6A0003AC9E /* AppDB.swift */,
+				6534DC0B1FBC6F380003AC9E /* AppCoreDB.swift */,
+				6534DC0D1FBC6F460003AC9E /* AppCacheDB.swift */,
 			);
 			path = db;
 			sourceTree = "<group>";
@@ -477,16 +486,19 @@
 				6534DC071FB9CE6A0003AC9E /* AppDB.swift in Sources */,
 				658642571FB0868D007DE216 /* AppConstant.swift in Sources */,
 				65DABBD91FA5D0E7006D8D4D /* LiveTelecastController.swift in Sources */,
+				6534DC0C1FBC6F380003AC9E /* AppCoreDB.swift in Sources */,
 				65DABBC81FA5B0CB006D8D4D /* ApiHome.swift in Sources */,
 				6586425E1FB08699007DE216 /* UIColor+Extention.swift in Sources */,
 				6586425D1FB08699007DE216 /* String+Extension.swift in Sources */,
 				65DABBCC1FA5B145006D8D4D /* HomeView.swift in Sources */,
+				6534DC0A1FBC6EC00003AC9E /* AppSqlite.swift in Sources */,
 				65624EC71FAD867100CF73B5 /* HomeModel.swift in Sources */,
 				658642531FB08672007DE216 /* UIBasicController.swift in Sources */,
 				6534DC011FB6F6670003AC9E /* LiveModel.swift in Sources */,
 				65DABBDB1FA5D119006D8D4D /* WatchLiveController.swift in Sources */,
 				658642601FB08699007DE216 /* UIView+Frame.swift in Sources */,
 				6586425F1FB08699007DE216 /* UIDevice+Extention.swift in Sources */,
+				6534DC0E1FBC6F460003AC9E /* AppCacheDB.swift in Sources */,
 				65714A091FA20546005E37FC /* AppDelegate.swift in Sources */,
 				65714A451FA20775005E37FC /* HomeViewController.swift in Sources */,
 			);

@@ -18,6 +18,9 @@ class LiveTelecastController: UIBasicController ,LFLiveSessionDelegate {
         let audioConfiguration = LFLiveAudioConfiguration.defaultConfiguration(for: LFLiveAudioQuality.high)
         let videoConfiguration = LFLiveVideoConfiguration.defaultConfiguration(for: LFLiveVideoQuality.low3)
         let session = LFLiveSession(audioConfiguration: audioConfiguration, videoConfiguration: videoConfiguration)
+        session?.beautyFace = true
+        session?.mirror = true
+        session?.torch = true
         return session!
     }()
     
@@ -67,7 +70,6 @@ class LiveTelecastController: UIBasicController ,LFLiveSessionDelegate {
         startLiveButton.setTitleColor(UIColor.black, for:UIControlState())
         startLiveButton.setTitle("开始直播", for: UIControlState())
         startLiveButton.titleLabel!.font = UIFont.systemFont(ofSize: 14)
-        //        startLiveButton.backgroundColor = UIColor(colorLiteralRed: 50, green: 32, blue: 245, alpha: 1)
         startLiveButton.backgroundColor = UIColor.init(r: 50, g: 32, b: 245)
         return startLiveButton
     }()
